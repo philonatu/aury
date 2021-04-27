@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+      <div class="main">
+        <div class="main01">
+          <div class="side">
+            <ul>
+              <li><a class="active" href="#">실험적 자연철학과 <br> 생활인문학</a></li>
+              <li><a href="#">생물철학</a></li>
+              <li><a href="#">의학의 철학</a></li>
+              <li><a href="#">원시 인간학</a></li>
+              <li><a href="#">지능과 인지</a></li>
+              <li><a href="#">양자론 철학</a></li>
+              <li><a href="#">과학일반</a></li>
+              <li><a href="#">철학일반</a></li>
+              <li><a href="#">인문지리역사</a></li>
+              <li><a href="#">사회문화환경</a></li>
+              <li><a href="#">동양고전 자연학</a></li>
+              <li><a href="#">조선근대</a></li>
+            </ul>
+          </div>
+
+          <div class="intro01">
+            <img src="{% static 'img/logo01.png' %}" alt="logo">
+
+            <p style="font-weight: bolder">실험적 자연철학이란 무엇입니까?
+            </p>
+            <p>
+              <span style="font-weight:bold">
+                <실험적 현대 자연철학>
+              </span>이란 "자연주의 인식론과 진화론적 존재론"이라는 두 토대 위에서 과학과 철학을 연결함으로써 인간과 사회에 대한 통찰력을 구하려는 필로나투 철학의 사유와 실천입니다. <br>
+            </p>
+            <p style="font-weight: bolder">실험적 자연철학은 무엇을 어떻게 다루나요?</p>
+            <p>생물학과 의학에서 신경과학과 동양고전의 자연학 등 다양한 주제를 다룹니다. 다양한 분야를 서로 연결하여 궁극적으로 이중화된 인간의 모습, "Homo Duplex"를 엿보고자 합니다. 간단히 말해서 이 웹사이트의 방향은 Homo Duplex를 과학으로 분석하고 철학으로 종합하는 데 있습니다. 그 방편으로 '반성과 비판'이라는 생각과 행동의 힘이 필요합니다.
+            </p>
+          </div>
+
+          <div class="intro02">
+            <img src="{% static 'img/cave_painting_hunting.jpg' %}" alt="cave painting">
+            <p style="font-weight: bolder;">
+              실험적 자연철학의 관심을 사례로 들자면요,
+            </p>
+            <p>
+              필로나투 웹페이지에서 전개되는 <실험적 현대 자연철학>은 고대 그리스 자연철학만도 아니고 독일 자연철학도 아니며 서양 중근세 자연학(박물지)만도 아니고 현대 과학철학이나 자연과학만도 아니며, 그런 모두와 더불어 동양고전 자연관까지를 포함합니다. 한 가지 예를 들어 <실험적 현대 자연철학>은 20만년 전 구석기 혹은 1만년 전 신석기 선조가 살았던 삶의 형태를 추적하는 소위 <원시 인간학>을 통하여 현대인의 생활인문학을
+                    표현하려는 시도를 할 수 있습니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="main02">
+
+          <div class="book_medicine_image">
+            <p style="font-size: 40px; font-family: 'Nanum Pen Script', cursive; color: blue;">
+              새 책 <의학의 철학> 소개합니다.</p>
+            <img src="{% static 'img/book_medicine.png' %}" alt="book_image">
+          </div>
+
+          <div class="book_medicine">
+            차례 <br>추천서문: 제임스 마컴 교수, 강신익 교수 <br>
+            1장 의철학 논쟁과 인문의학의 과제 <br>
+            2장 의학적 추론, 인과론, 의료인공지능 <br>
+            3장 분류의학과 의학 실재론 논쟁 <br>
+            4장 질병관의 역사와 질병모델 <br>
+            5장 의료인류학으로 본 질병과 건강 <br>
+            6장 진화론과 의학의 관계사 <br>
+            7장 진화의학 I: 질병취약성과 불일치모델 <br>
+            8장 진화의학 II: 진화역학과 감염성 질병, 의학교육<br>
+            9장 면역의학의 철학 <br>
+            10장 노화방지의학에서 노화의학으로 <br>
+            11장 분석과 해석: 의과학과 의철학의 접점<br>
+            (640쪽)
+          </div>
+        </div>
+        <div class="main03">
+          <div class="book_em">
+            <p style="font-size: 40px; font-family: 'Nanum Pen Script', cursive; color: blue;text-align:left;"> 최순덕/최종덕 공동번역 <br>
+              <뇌복제와 인공지능 시대> (2020년1월)
+            </p>
+            <img src="{% static 'img/book_em.jpg' %}" alt="book_image">
+            <p>대한민국 학술원 2020년 우수도서 (과학 부문)</p>
+          </div>
+          <div class="book_awarded">
+            <p style="font-size: 40px; font-family: 'Nanum Pen Script', cursive; color: blue;">
+              또 다른 우수도서 선정</p>
+
+            <img src="{% static 'img/book_awarded.jpeg' %}" alt="book_image">
+          </div>
+        </div>
+      </div>
+
+{% endblock %}

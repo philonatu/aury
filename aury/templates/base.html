@@ -1,0 +1,125 @@
+
+{% load static %}
+
+<!doctype html>
+<html lang="ko">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!-- 구글폰트 Noto Sans KR Medium 500 -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet"> -->
+    <!-- 구글폰트 Noto Sans KR Regular 400 -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>philonatu</title>
+
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+
+        <nav class="navbar">
+
+          <div class="search">
+            <input type="text" class="input_text" />
+            <button type="submit" class="submit_Top">검색</button>
+
+          </div>
+
+          <div class="menu-1">
+            <a href="http://philonatu.com">홈 첫화면</a>
+          </div>
+          <div class="menu-2 tooltip" data-tooltips="구홈페이지에서 데이터를 이전 중입니다. 기존 구홈페이지를 볼 수 있습니다.">
+            <a href="http://eyeofphilosophy.net">구홈페이지</a>
+          </div>
+          <div class="menu-3 tooltip" data-tooltips="필로나투 그림으로 아트와 카드뉴스(지식그림)로 구성되었습니다.">
+            <a href="http://eyeofphilosophy.net">갤러리</a>
+          </div>
+          <div class="menu-4 tooltip" data-tooltips="기관 출판 되지 않은 글쓰기가 이곳 블로그에 게재됩니다.">
+            <a href="http://eyeofphilosophy.net">블로그</a>
+          </div>
+          <div class="menu-5 tooltip" data-tooltips="article centered English version">
+            <a style="font-size:15px" href="http://philonatu.com/?page_id=295">English</a>
+          </div>
+        </nav>
+
+
+        <div class="headwords">
+          <h2 style="color:white; letter-spacing:5px; word-spacing:10px"> PHILONATU </h2>
+          <h4 style="color:white; letter-spacing:5px; word-spacing:10px">SCIENCE AND PHILOSOPHY ON NATURE <br> 자연을 통한 인간 이해</h4>
+          <h1 style="color:#263343; letter-spacing:5px; word-spacing:10px">독립학자 최종덕의 현대자연철학</h1>
+          <img src="{% static 'img/logo_new.png' %}">
+
+
+
+        </div>
+
+
+        <div class="navbar_under">
+
+
+          <div class="menu_under">
+            <a href="http://philonatu.com">아카이브(전체목록)</a>
+          </div>
+          <div class="menu_under">
+            <a href="{% url 'book' %}">저서 소개</a>
+          </div>
+          <div class="menu_under">
+            <a href="http://eyeofphilosophy.net">서평 모음</a>
+          </div>
+          <div class="menu_under">
+            <a href="http://eyeofphilosophy.net">논문 논저</a>
+          </div>
+          <div class="menu_under">
+            <a href="http://philonatu.com/english">개념 뭉치</a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+    {% block content %}
+
+    {% endblock %}
+
+
+      <!-- 이하 풋터-->
+
+      <div class="footer">
+        <div class="footer_logo" >
+          <img  src="{% static 'img/logo_text_sm.png' %}" alt="logo letter">
+        </div>
+        <div class="footer_text">
+          <p>
+            페이지에 실린 텍스트와 더불어 사진과 그림 등의 모든 이미지는 philonatu 저작입니다. <br>
+            이 웹은 기성 템플릿을 사용하지 않았으며 php 대신 python/django로 만들었습니다.<br>
+            Copyright 2021. PHILONATU all rights reserved. 통신: philonatu@gmail.com
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+  </body>
+
+</html>
